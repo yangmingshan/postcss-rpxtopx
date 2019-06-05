@@ -1,4 +1,4 @@
-# postcss-rpxtopx
+# postcss-rpxtopx [![Build Status](https://img.shields.io/circleci/project/yangmingshan/postcss-rpxtopx.svg)](https://circleci.com/gh/yangmingshan/postcss-rpxtopx) [![Coverage Status](https://img.shields.io/codecov/c/github/yangmingshan/postcss-rpxtopx.svg)](https://codecov.io/gh/yangmingshan/postcss-rpxtopx) [![NPM Version](https://img.shields.io/npm/v/postcss-rpxtopx.svg)](https://www.npmjs.com/package/postcss-rpxtopx) [![License](https://img.shields.io/npm/l/postcss-rpxtopx.svg)](https://opensource.org/licenses/MIT)
 
 一个 PostCSS 插件，用于将小程序的 rpx 单位转换为 px
 
