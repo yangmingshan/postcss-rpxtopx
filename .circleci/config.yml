@@ -7,5 +7,6 @@ jobs:
     steps:
       - checkout
       - run: yarn
+      - run: yarn run lint
       - run: yarn run test
       - run: yarn run codecov -t $CI_CODECOV_TOKEN

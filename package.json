@@ -4,6 +4,7 @@
   "description": "A plugin for PostCSS that convert rpx to px",
   "main": "index.js",
   "scripts": {
+    "lint": "cross-env NODE_ENV=production eslint index.js lib __tests__",
     "test": "jest",
     "codecov": "codecov"
   },
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/yangmingshan/postcss-rpxtopx#readme",
   "devDependencies": {
     "codecov": "^3.5.0",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^12.0.0",
@@ -35,11 +37,25 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
     "postcss": "^7.0.16",
     "prettier": "^1.17.1"
   },
   "peerDependencies": {
     "postcss": ">=7.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
