@@ -1,8 +1,12 @@
 {
   "name": "postcss-rpxtopx",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A plugin for PostCSS that convert rpx to px",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/*.js"
+  ],
   "scripts": {
     "lint": "cross-env NODE_ENV=production eslint index.js lib __tests__",
     "test": "jest",
