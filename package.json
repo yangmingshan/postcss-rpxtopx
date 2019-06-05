@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "cross-env NODE_ENV=production eslint index.js lib __tests__",
     "test": "jest",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
