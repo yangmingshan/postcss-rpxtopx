@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn run test
-      - run: yarn run codecov  -- -t $RPXTOPX_CODECOV_TOKEN
+      - run: yarn run codecov -t $CI_CODECOV_TOKEN
